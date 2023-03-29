@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <ng-container *ngFor="let alumno of alumnos">
+        <li class="list-group-item" [ngStyle]="{'background-color': (alumno != 'Pain') ? 'white' : 'gray'}">{{ alumno | uppercase }}</li>
+    </ng-container>
+</ul>
